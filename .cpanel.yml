@@ -1,5 +1,6 @@
 version: 1
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/rajota/public_html/
-    - /usr/bin/rsync -av --delete --exclude=".git" ./ $DEPLOYPATH
+    - export DEPLOYPATH=/home/rajota/public_html/new/public/
+    - /usr/bin/rsync -av --exclude=".git" --exclude=".cpanel" ./ $DEPLOYPATH
+
